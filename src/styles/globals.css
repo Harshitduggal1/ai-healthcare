@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base layer for custom CSS variables */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 24.6 95% 53.1%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 24.6 95% 53.1%;
+    --radius: 0.5rem;
+  }
+}
+
+/* Example class for custom color settings */
+.jhfsd {
+  color: rgb(239, 68, 68); /* Tailwind Red */
+  color: rgb(139, 92, 246); /* Tailwind Violet */
+  color: rgb(6, 182, 212);  /* Tailwind Cyan */
+  color: #d946ef;           /* Fuchsia */
+}
+
+/* Custom selection styling */
+::selection {
+  background: hsl(var(--primary) / 0.1);
+  color: hsl(var(--foreground));
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--accent-foreground) / 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-corner {
+  background: hsl(var(--foreground) / 0.1);
+}
+
+/* Disable image dragging and selecting */
+image {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Container styles for loading UI components */
+.container {
+  --uib-size: 45px;
+  --uib-color: #d946ef; /* Fuchsia */
+  --uib-speed: 1.75s;
+  --uib-bg-opacity: 0.1;
+  height: 31.25px;
+  width: 50px;
+  transform-origin: center;
+  overflow: visible;
+}
+
+/* Car animation in the UI */
+.car {
+  stroke: var(--uib-color); /* Fuchsia */
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: travel var(--uib-speed) ease-in-out infinite,
+             fade var(--uib-speed) ease-out infinite;
+  will-change: stroke-dasharray, stroke-dashoffset;
+  transition: stroke 0.5s ease;
+}
+
+/* Track style for loading UI */
+.track {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--uib-color); /* Fuchsia */
+  opacity: var(--uib-bg-opacity);
+}
+
+/* Skeleton loader animation */
+.skeleton {
+  background: linear-gradient(90deg, #d4d4d4 25%, #f5f5f5 50%, #d4d4d4 75%);
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
+}
+
+/* Keyframes for travel animation */
+@keyframes travel {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  75% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Keyframes for fade animation */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20%, 55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Keyframes for loading skeleton */
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
