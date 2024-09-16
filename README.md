@@ -144,7 +144,7 @@ For more information about the technologies used in Nexaura.ai, visit the follow
 
 ## Contributions
 
-We welcome contributions! If you're interested in contributing to Nexaura.ai, please feel free to open an issue or submit a pull request.
+We welcome contributions🙌🏻! If you're interested in contributing to Nexaura.ai, please feel free to open an issue or submit a pull request.
 
 ---
 
