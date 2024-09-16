@@ -20,6 +20,8 @@
 - **Medical Templates:** Automated workflows and templates to standardize healthcare practices.
 
 ---
+<img width="1440" alt="Screenshot 2024-09-15 at 15 43 23" src="https://github.com/user-attachments/assets/9bef6978-d579-45fd-966b-27c225b63b55">
+
 
 ## Tech Stack
 
