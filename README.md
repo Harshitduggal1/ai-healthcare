@@ -1,6 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+NEXAURA.AI
+
 
 <img width="1440" alt="Screenshot 2024-09-15 at 15 43 23" src="https://github.com/user-attachments/assets/c6e83f22-b525-4f01-b63f-c9b75b8d16f8">
 ****
@@ -11,6 +13,31 @@ First, run the development server:
 ```bash
 
 bun run dev
+
+
+DATABASE_URL="postgresql://Nexaura_owner:password@host/Nexaura?sslmode=require"
+
+# Uncomment next line if you use Prisma <5.10
+# DATABASE_URL_UNPOOLED="postgresql://Nexaura_owner:password@host/Nexaura?sslmode=require"
+
+# app
+NEXT_PUBLIC_APP_NAME=Nexaura.ai
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in?redirect_url=/dashboard
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up?redirect_url=/dashboard
+
+# google
+NEXT_PUBLIC_GOOGLE_API_KEY="your_google_api_key"
+
+# stripe
+STRIPE_SECRET_KEY=your_stripe_secret_key
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
