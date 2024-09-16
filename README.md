@@ -2,6 +2,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+![Uploading Screenshot 2024-09-15 at 15.43.23.png…]()
+
+
+
 First, run the development server:
 
 ```bash
