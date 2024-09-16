@@ -6,7 +6,7 @@ https://github.com/Harshitduggal1/ai-healthcar
 
 
 
-
+<img width="1440" alt="Screenshot 2024-09-15 at 15 43 23" src="https://github.com/user-attachments/assets/c6e83f22-b525-4f01-b63f-c9b75b8d16f8">
 
 First, run the development server:
 
@@ -15,7 +15,7 @@ First, run the development server:
 then bun install
 bun run dev
 
-<img width="1440" alt="Screenshot 2024-09-15 at 15 43 23" src="https://github.com/user-attachments/assets/c6e83f22-b525-4f01-b63f-c9b75b8d16f8">
+
 
 .env
 --------------------------------------------------------------------------------
